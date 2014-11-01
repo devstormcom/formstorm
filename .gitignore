@@ -11,3 +11,5 @@ composer.lock
 main.ini
 vendor
 .htpasswd
+app/cache/metaData
+app/cache/views
