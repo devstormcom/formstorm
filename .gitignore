@@ -1,0 +1,12 @@
+composer.json
+composer.lock
+.idea/.name
+.idea/devstorm.iml
+.idea/encodings.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/vcs.xml
+.idea/workspace.xml
+.idea/scopes/scope_settings.xml
+main.ini
+vendor
