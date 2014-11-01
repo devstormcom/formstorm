@@ -10,3 +10,4 @@ composer.lock
 .idea/scopes/scope_settings.xml
 main.ini
 vendor
+.htpasswd
