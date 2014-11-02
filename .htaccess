@@ -1,9 +1,9 @@
 #.htaccess for uoc
-AuthName "Restricted Area" 
-AuthType Basic 
-AuthUserFile /var/www/web/devstorm/htdocs/.htpasswd 
-AuthGroupFile /dev/null 
-require valid-user
+#AuthName "Restricted Area"
+#AuthType Basic
+#AuthUserFile /var/www/web/devstorm/htdocs/.htpasswd
+#AuthGroupFile /dev/null
+#require valid-user
 <IfModule mod_rewrite.c>
     RewriteEngine on
     RewriteRule  ^$ public/    [L]
