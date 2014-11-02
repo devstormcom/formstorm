@@ -1,9 +1,14 @@
 /**
- * Helper.js
- *
- * @author Flavio Kleiber <flavio.kleiber@gentleman-informatik.ch>
- * @copyright (c) 2014 Flavio Kleiber, Gentleman Informatik
- * @package devstorm.helper
+ +------------------------------------------------------------------------+
+ | dev-storm.com                                                          |
+ +------------------------------------------------------------------------+
+ | Copyright (c) 2014 dev-storm.com Team                                  |
+ +------------------------------------------------------------------------+
+ | @author flaver <flaver@dev-storm.com>                                  |
+ | @copyright flaver, dev-storm.com                                       |
+ | @package devstorm.js                                                   |
+ | @desc helper                                                           |
+ +------------------------------------------------------------------------+
  */
 var devstorm_Helper = {
 
