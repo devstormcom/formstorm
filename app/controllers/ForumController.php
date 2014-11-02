@@ -1,17 +1,22 @@
 <?php
+/**
++------------------------------------------------------------------------+
+| dev-storm.com                                                          |
++------------------------------------------------------------------------+
+| Copyright (c) 2014 dev-storm.com Team                                  |
++------------------------------------------------------------------------+
+| @author flaver <flaver@dev-storm.com>                                  |
+| @copyright flaver, dev-storm.com                                       |
+| @package devstorm.controllers                                          |
+| @desc Forum page                                                       |
++------------------------------------------------------------------------+
+ */
 namespace devStorm\Controllers;
 use devStorm\Controllers\BaseController;
 use devStorm\Models\Thread;
 use devStorm\Library\Error\Notification;
 use devStorm\Models\Post as ForumPost;
 use devStorm\Library\BBCode\Parser;
-/**
- * Forum
- *
- * @author Flavio Kleiber <flavio.kleiber@gentleman-informatik.ch>
- * @copyright (c) 2014 Flavio Kleiber, Gentleman Informatik
- * @package devstorm.controllers
- */
 
 class ForumController extends BaseController {
 

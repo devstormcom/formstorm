@@ -1,14 +1,20 @@
 <?php
+/**
++------------------------------------------------------------------------+
+| dev-storm.com                                                          |
++------------------------------------------------------------------------+
+| Copyright (c) 2014 dev-storm.com Team                                  |
++------------------------------------------------------------------------+
+| @author flaver <flaver@dev-storm.com>                                  |
+| @copyright flaver, dev-storm.com                                       |
+| @package devstorm.models                                               |
+| @desc user model                                                       |
++------------------------------------------------------------------------+
+ */
+
 namespace devStorm\Models;
 use Phalcon\Mvc\Model;
 use devStorm\Library\Mail\Mail;
-/**
- * IndexPage
- *
- * @author Flavio Kleiber <flavio.kleiber@gentleman-informatik.ch>
- * @copyright (c) 2014 Flavio Kleiber, Gentleman Informatik
- * @package devstorm.models
- */
 
 class User extends Model {
 

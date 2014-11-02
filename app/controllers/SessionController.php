@@ -1,18 +1,23 @@
 <?php
- namespace devStorm\Controllers;
- use devStorm\Controllers\BaseController;
- use devStorm\Library\Github\OAuth;
- use devStorm\Forms\RegisterForm;
- use devStorm\Library\Error\Notification;
- use devStorm\Models\User;
-/**
- * IndexPage
- *
- * @author Flavio Kleiber <flavio.kleiber@gentleman-informatik.ch>
- * @copyright (c) 2014 Flavio Kleiber, Gentleman Informatik
- * @package devstorm.controllers
- */
-  
+ /**
+ +------------------------------------------------------------------------+
+ | dev-storm.com                                                          |
+ +------------------------------------------------------------------------+
+ | Copyright (c) 2014 dev-storm.com Team                                  |
+ +------------------------------------------------------------------------+
+ | @author flaver <flaver@dev-storm.com>                                  |
+ | @copyright flaver, dev-storm.com                                       |
+ | @package devstorm.controllers                                          |
+ | @desc register and login stuff                                         |
+ +------------------------------------------------------------------------+
+  */
+namespace devStorm\Controllers;
+use devStorm\Controllers\BaseController;
+use devStorm\Library\Github\OAuth;
+use devStorm\Forms\RegisterForm;
+use devStorm\Library\Error\Notification;
+use devStorm\Models\User;
+
  class SessionController extends BaseController {
 
  	/**
@@ -32,7 +37,7 @@
 
  	/**
  	 * Register a new user via Github
- 	 * 
+ 	 *
  	 * @access  public
  	 * @return  \Phalcon\Http\ResponseInterface
  	 */

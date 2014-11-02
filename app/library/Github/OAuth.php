@@ -1,14 +1,19 @@
 <?php
+/**
++------------------------------------------------------------------------+
+| dev-storm.com                                                          |
++------------------------------------------------------------------------+
+| Copyright (c) 2014 dev-storm.com Team                                  |
++------------------------------------------------------------------------+
+| @author flaver <flaver@dev-storm.com>                                  |
+| @copyright flaver, dev-storm.com                                       |
+| @package devstorm.github                                               |
+| @desc oAuth                                                            |
++------------------------------------------------------------------------+
+ */
 namespace devStorm\Library\Github;
 use Phalcon\DI\Injectable;
 use Guzzle\Http\Client;
-/**
- * OAuth Implementation
- *
- * @author Flavio Kleiber <flavio.kleiber@gentleman-informatik.ch>
- * @copyright (c) 2014 Flavio Kleiber, Gentleman Informatik
- * @package devstorm.library.github
- */
 
 class OAuth extends Injectable {
 	
@@ -39,12 +44,6 @@ class OAuth extends Injectable {
 
 	protected $clientSecret = "30e397c8e5c33fd6e3f89d3fc53b01513528581e";
 
-	/**
-	* Class constructor
-	* 
-	* @return
-	*/
-	public function __construct() {}
 	
 	/**
 	* Authorizes a user

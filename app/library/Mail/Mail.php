@@ -1,14 +1,19 @@
 <?php
+/**
++------------------------------------------------------------------------+
+| dev-storm.com                                                          |
++------------------------------------------------------------------------+
+| Copyright (c) 2014 dev-storm.com Team                                  |
++------------------------------------------------------------------------+
+| @author flaver <flaver@dev-storm.com>                                  |
+| @copyright flaver, dev-storm.com                                       |
+| @package devstorm.mail                                                 |
+| @desc mail                                                             |
++------------------------------------------------------------------------+
+ */
 namespace devStorm\Library\Mail;
 use Phalcon\Mvc\User\Component;
 use Phalcon\Mvc\View;
-/**
- * OAuth Implementation
- *
- * @author Flavio Kleiber <flavio.kleiber@gentleman-informatik.ch>
- * @copyright (c) 2014 Flavio Kleiber, Gentleman Informatik
- * @package devstorm.library.mail
- */
 
 class Mail extends Component {
 

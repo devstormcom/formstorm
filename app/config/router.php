@@ -1,12 +1,17 @@
 <?php
-use \Phalcon\Mvc\Router;
 /**
- * Router for routing routes ;)
- *
- * @author Flavio Kleiber <flavio.kleiber@gentleman-informatik.ch>
- * @copyright (c) 2014 Flavio Kleiber, Gentleman Informatik
- * @package devstorm.loader
++------------------------------------------------------------------------+
+| dev-storm.com                                                          |
++------------------------------------------------------------------------+
+| Copyright (c) 2014 dev-storm.com Team                                  |
++------------------------------------------------------------------------+
+| @author flaver <flaver@dev-storm.com>                                  |
+| @copyright flaver, dev-storm.com                                       |
+| @package devstorm.router                                               |
+| @desc routes                                                           |
++------------------------------------------------------------------------+
  */
+use \Phalcon\Mvc\Router;
 
 $router = new Router(false);
 

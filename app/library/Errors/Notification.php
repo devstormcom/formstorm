@@ -1,13 +1,18 @@
 <?php
-namespace devStorm\Library\Error;
 /**
- * Error msg's
- *
- * @author Flavio Kleiber <flavio.kleiber@gentleman-informatik.ch>
- * @copyright (c) 2014 Flavio Kleiber, Gentleman Informatik
- * @package devstorm.library.error
++------------------------------------------------------------------------+
+| dev-storm.com                                                          |
++------------------------------------------------------------------------+
+| Copyright (c) 2014 dev-storm.com Team                                  |
++------------------------------------------------------------------------+
+| @author flaver <flaver@dev-storm.com>                                  |
+| @copyright flaver, dev-storm.com                                       |
+| @package devstorm.errors                                               |
+| @desc error msg                                                        |
++------------------------------------------------------------------------+
  */
- 
+namespace devStorm\Library\Error;
+
  class Notification {
  	// BASIC MSG'S //
  	const ERROR_GITHUB_PROBLEM = "Anscheined git es gerade ein Problem mit github.com, wir versuchen den Fehler zu finden.";

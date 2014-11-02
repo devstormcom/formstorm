@@ -1,14 +1,19 @@
 <?php
+/**
++------------------------------------------------------------------------+
+| dev-storm.com                                                          |
++------------------------------------------------------------------------+
+| Copyright (c) 2014 dev-storm.com Team                                  |
++------------------------------------------------------------------------+
+| @author flaver <flaver@dev-storm.com>                                  |
+| @copyright flaver, dev-storm.com                                       |
+| @package devstorm.bbcode                                               |
+| @desc bbcode parser for our posts                                      |
++------------------------------------------------------------------------+
+ */
 namespace devStorm\Library\BBCode;
 use Golonka\BBCode\BBCodeParser;
 require_once APP_PATH.'/vendor/JBBCode/Parser.php';
-/**
- * BBCode parser
- *
- * @author Flavio Kleiber <flavio.kleiber@gentleman-informatik.ch>
- * @copyright (c) 2014 Flavio Kleiber, Gentleman Informatik
- * @package devstorm.library.bbcode
- */
 
 class Parser{
 
