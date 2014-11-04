@@ -24,18 +24,16 @@ class BaseController extends \Phalcon\Mvc\Controller {
      */
 	public function initialize() {
 		$this->tag->setTitle("devStorm");
-        $this->loadOnlineUser(30);
+        $this->loadOnlineUser();
 	}
 
     /**
      * Returns the last online user
      *
-     * @param int $min
      * @return void
      */
-    private function loadOnlineUser($min = 10) {
-        $online = strtotime("-".$min." minutes");
-        $user = User::find(array('last_time_online >= :minutes:', 'bind' => array('minutes' => $online)));
+    private function loadOnlineUser() {
+        $user = User::find('online = 1');
         if($user !== false) {
             $this->view->onlineUser = $user;
         }

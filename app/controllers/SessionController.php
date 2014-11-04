@@ -121,6 +121,7 @@ use devStorm\Models\User;
             if($user !== false) {
                 $this->session->set('auth', array('id' => $user->id, 'username' => $username, 'email' => $user->email, 'created' => $user->created, 'admin' => $user->admin));
                 $user->last_time_online = time();
+                $user->online = 1;
                 $user->update();
                 $this->response->redirect('');
             } else {

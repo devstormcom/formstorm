@@ -34,6 +34,8 @@ class User extends Model {
 
     public $admin;
 
+    public $online;
+
 	public function getSource() {
         return "User";
     }
