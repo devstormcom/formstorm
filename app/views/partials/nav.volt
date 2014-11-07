@@ -12,6 +12,7 @@
 	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 	    	<ul class="nav navbar-nav ">
 	    		<li>{{ link_to('forum', 'Forum') }}</li>
+                <li>{{ link_to('devchat', 'Chat') }}</li>
 	    		<li>{{ link_to('about', 'About') }}</li>
 	    	</ul>
 	    </div>

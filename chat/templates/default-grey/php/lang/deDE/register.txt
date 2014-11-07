@@ -1,0 +1,18 @@
+Hallo und herzlich Willkommen im Chat!
+
+Deine Benutzerdaten lauten:
+
+*Name*: {username}
+*Pass-wort*: {password}
+
+Bitte gib dein Passwort nicht weiter. Es wird *niemals* jemand vom Team danach fragen.
+
+Bevor du dich zum ersten mal anmelden kannst, musst du dein Konto über diesen Link aktivieren:
+{activate_url}
+
+Den Chat erreichst du immer hier: 
+{url}
+
+
+Mit freundlichen Grüßen
+Das Chat Team

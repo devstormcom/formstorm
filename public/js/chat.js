@@ -23,13 +23,19 @@ var devstorm_chat = {
     'send': function(username, msg) {
         $.ajax({
             'method'    : 'post',
-            'url'       : '/chat/home'
+            'url'       : '/chat',
+            data        : { 'username':username, 'message':msg }
+        }).done(function( data ) {
+                console.log( "Sample of data:", data );
         });
     },
     'update': function() {
 
     },
     'disconnect': function() {
+
+    },
+    load: function() {
 
     }
 };

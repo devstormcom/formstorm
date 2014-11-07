@@ -21,11 +21,13 @@ class ChatController extends BaseController {
         if(!$this->session->has('auth')) {
             $this->response->redirect('login');
         }
+        if($this->request->isAjax() && $this->request->isPost()) {
+        }
     }
 
     public function chatAction() {
         $this->tag->prependTitle("&hearts; Chat - ");
-        if($this->request->isAjax()) {}
+
     }
 }
 ?>

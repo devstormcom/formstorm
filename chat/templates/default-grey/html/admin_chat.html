@@ -1,0 +1,26 @@
+<div align="center">
+	<div>{msg}</div>
+	<br />
+
+	<table width="85%" border="1" cellpadding="4">
+	<tr>
+		<td class="admin_menu0" style="text-align:left" width="60%"><b>Chatlog löschen</b><br />
+		<span style="font-size:11px;">Alle Einträge im Chat, die älter als heute sind werden unwiderruflich aus dem Log gelöscht.</span></td>
+		<td class="admin_menu0" width="40%"><input type="button" value="ausführen" onclick="var ok=confirm('Chatlog wirklich löschen?'); if(ok==true){document.location.href='?action=chat&amp;mode=chatlog';}" /></td>
+	</tr>
+	
+	<tr>
+		<td class="admin_menu1" style="text-align:left" width="60%"><b>Unbestätigte Benutzer löschen</b><br />
+		<span style="font-size:11px;">Es werden alle Benutzer gelöscht, die Ihre Benutzer-Registrierung nicht innerhalb von 7 Tagen per E-Mail bestätigt haben.</span></td>
+		<td class="admin_menu1" width="40%"><input type="button" value="ausführen" onclick="var ok=confirm('Unbestätigte Benutzer wirklich löschen?'); if(ok==true){document.location.href='?action=chat&amp;mode=unconfirmed';}" /></td>
+	</tr>
+	
+	<tr>
+		<td class="admin_menu0" style="text-align:left" width="60%"><b>Inaktive Benutzer löschen</b><br />
+		<span style="font-size:11px;">Es werden alle Benutzer gelöscht, die länger als 60 Tage nicht aktiv waren.</span></td>
+		<td class="admin_menu0" width="40%"><input type="button" value="ausführen" onclick="var ok=confirm('Inaktive Benutzer löschen?'); if(ok==true){document.location.href='?action=chat&amp;mode=inaktiv';}" /></td>
+	</tr>
+	</table>
+</div>
+<br />
+

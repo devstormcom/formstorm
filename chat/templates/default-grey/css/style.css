@@ -1,0 +1,308 @@
+@CHARSET "UTF-8";
+
+/****************
+* Overall Content
+*****************/
+
+html, body {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	background-color: #EFEFEF;
+	color: #000000;
+	height: 99.5%;
+	margin: 0px;
+	padding: 1px;
+	overflow: auto;
+}
+
+table {
+	border-collapse: collapse;
+	border-color: #525252;
+}
+
+a:link, a:visited {
+	color: #003080;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #0070C0;
+	text-decoration: underline
+}
+
+#foot {
+	font-size: 8pt;
+	color: #003080;
+	text-align: center;
+	border: 1px solid #525252;
+	width: 170px;
+	margin: auto;
+	margin-top: 50px;
+	padding: 2px;
+}
+
+
+/****************
+* Chat-Index
+*****************/
+
+td#login-form {
+	border: 1px solid #525252;
+	background-color: #FFFFFF;
+	padding: 5px;
+	vertical-align: top;
+	border-collapse: separate;
+}
+
+td#news-display {
+	border: 1px solid #525252;
+	background-color: #FFFFFF;
+	width: 600px;
+	padding: 10px;
+	text-align: justify;
+	vertical-align: top;
+}
+
+td#channel-list {
+	border: 1px solid #525252;
+	background-color: #FFFFFF;
+	width: 250px;
+	padding: 10px;
+	vertical-align: top;
+}
+
+td#index-foot {
+	border: 1px solid #525252;
+	background-color: #FFFFFF;
+	padding: 2px;
+	font-size: 11px;
+	width: 878px;
+	text-align: center;
+	vertical-align: top;
+}
+
+
+/****************
+* Chat design
+*****************/
+
+/* chat frame */
+div#chat {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+
+/***************
+ * right panel *
+ *************** 
+
+/* chat right layer design */
+div#rightLayer {
+	width: 250px;
+	height: 100%;
+	float: right;
+	padding: 0px;
+	margin-left: 20px;
+	border: 0px solid #525252;
+}
+
+/* chat online channel layer */
+div#online-channel {
+	text-align: center;	
+	background-color: #CCCCFF;
+	font-size: 14px;
+	padding: 3px 0px 3px 0px;
+}
+/* online chatter list */
+div#online {
+	max-height: 400px;
+	overflow-x: hidden;
+	overflow-y: auto;
+	border: 1px solid #000000;
+}
+span#online-users {
+	font-size: 10px;
+}
+div.online-userlist0 {
+	background-color: #F7F7F7;
+	padding: 5px;	
+}
+div.online-userlist1 {
+	background-color: #FFFFFF;
+	padding: 5px;
+}
+
+
+
+/**************
+ * left panel *
+ **************
+
+/* channel list design */
+#channel {
+	margin-bottom: 5px;
+	background-color: #FFFFFF;
+	border: 1px solid #525252;	
+	padding: 5px;	
+	overflow: hidden;
+}
+
+/* chat welcome layer */
+div#chat_welcome {
+	background-color: #DFDFEF;
+	border: 1px solid #525252;
+	overflow: hidden;
+	padding: 5px;
+	margin: 0px;
+}
+
+/* chat content design */
+div#chat_content {
+	min-height: 100px;
+ 	height: 60%;
+ 	overflow-x: hidden;
+	overflow-y: scroll;
+	border: 1px solid #525252;
+	border-top: 0px;
+	padding: 5px;
+	margin: 0px;
+	background-color: #DFDFCF;
+	font-size: 12px;
+}
+
+/* chat message post design */
+div#post {
+	background-color: #FFFFFF;
+	padding: 5px;
+	border: 1px solid #525252;
+	overflow: hidden;
+	border-top: 0px;
+ 	min-height: 80px;
+}
+
+/* text style */
+div.text0 {
+	background-color: #F7F7F7;
+	padding: 3px;
+	line-height: 12px;
+}
+div.text1 {
+	background-color: #FFFFFF;
+	padding: 3px;
+	line-height: 12px;
+}
+span.content-time {
+	font-size: 10px;
+}
+
+
+/****************
+* WHOIS
+*****************/
+
+table.whois-table {
+	width: 450px;
+}
+
+table#whois-table {
+	width: 450px;
+}
+
+td#whois-top {
+	background-color: #CCCCFF;
+	border: 1px solid #525252;
+	text-align: center;
+	height: 25px;
+}
+
+td.whois-top {
+	background-color: #CCCCFF;
+	border: 1px solid #525252;
+	height: 25px;
+}
+
+td.whois-td0 {
+	background-color: #F7F7F7;
+	border: 1px solid #525252;
+	padding: 5px;
+}
+
+td.whois-td1 {
+	background-color: #FFFFFF;
+	border: 1px solid #525252;
+	padding: 5px;
+}
+
+
+/****************
+* Smiley-Frame
+*****************/
+
+div#smileys {
+	display: none;
+	max-width: 60%;
+	background-color: #FFFFFF;
+	border: 1px solid #525252;
+	margin: auto;
+	position: absolute;
+	top: 87px;
+	left: 8px;
+}
+
+div#smiley-top {
+	background-color: #CCCCFF;
+	font-weight: bold;
+	text-align: left;
+	padding: 3px;
+}
+
+div#smiley-content {
+	text-align: left;
+	padding: 1px 5px 1px 5px;
+	max-height: 300px;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+
+/****************
+* Administration
+*****************/
+
+td.admin_menu-top {
+	background-color: #CCCCFF;
+	border: 1px solid #525252;
+	height: 25px;
+	width: 550px;
+	text-align: center;
+}
+
+td.admin_menu0 {
+	text-align: center;
+	padding: 5px;
+	background-color: #F7F7F7;
+}
+
+td.admin_menu1 {
+	text-align: center;
+	padding: 5px;
+	background-color: #FFFFFF;
+}
+
+
+/*************************
+ * JavaScript Test
+*************************/
+
+#window-javascript {
+	border: 5px solid #525252;
+	position: absolute;
+	top: 140px;
+	left: 25%;
+	width: 50%;
+	z-index: 2;
+	background-color: #FFAAB0;
+	padding: 20px;
+}

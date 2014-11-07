@@ -79,7 +79,7 @@ $router->add(
     )
 );
 
-$router->add('/chat', array('controller' => 'chat', 'action' => 'index'));
+$router->add('/devchat', array('controller' => 'chat', 'action' => 'index'));
 
 $router->add(
     '/member/:params',

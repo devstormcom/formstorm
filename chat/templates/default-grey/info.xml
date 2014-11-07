@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<template>
+	<name>Default Grey</name>
+	<folder>default-grey</folder>
+	<version>1.0.0</version>
+	<chatversion>1003</chatversion>
+	<description>Standard template for SHChat 1.0.0</description>
+	<date>2013-01-06</date>
+	<author>Scripthosting.net</author>
+	<website>http://www.scripthosting.net</website>
+</template>

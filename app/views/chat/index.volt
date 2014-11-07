@@ -3,4 +3,4 @@
 <br />
 Hier sind die Regeln: TODO!
 </p>
-<input type="button" value="Chat betreten" />
+<input type="button" onclick="window.open('http://chat.dev-storm.local', '_blank')" value="Chat betreten" />

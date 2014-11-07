@@ -13,11 +13,16 @@
  */
 namespace devStorm\Controllers;
 use devStorm\Controllers\BaseController;
+use devStorm\Models\User;
 
 class UserController extends BaseController {
 
     public function indexAction($username) {
         $this->tag->prependTitle("&hearts; $username - ");
+        $user = User::findFirst(array('username = :username:', 'bind' => array('username' => $username)));
+        if($user) {
+            $this->view->user = $user;
+        }
     }
 }
 ?>

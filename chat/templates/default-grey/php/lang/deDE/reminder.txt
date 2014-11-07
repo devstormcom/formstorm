@@ -1,0 +1,16 @@
+Hallo {username},
+
+du bekommst diese E-Mail, da du ein neues Passwort angefordert hast.
+Deine neuen Benutzerdaten lauten:
+
+*Name*: {username}
+*Pass-wort*: {password}
+
+Bitte gib dein Passwort nicht weiter. Es wird *niemals* jemand vom Team danach fragen.
+
+Den Chat erreichst du immer hier: 
+{url}
+
+
+Mit freundlichen Grüßen
+Das Chat Team
