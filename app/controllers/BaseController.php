@@ -24,7 +24,7 @@ class BaseController extends \Phalcon\Mvc\Controller {
      */
 	public function initialize() {
 		$this->tag->setTitle("devStorm");
-        $this->loadOnlineUser();
+        //$this->loadOnlineUser();
 	}
 
     /**

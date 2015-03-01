@@ -18,12 +18,7 @@ use devStorm\Models\Post;
  class IndexController extends BaseController {
  	
  	public function indexAction() {
-		$this->tag->prependTitle("&hearts; Home - ");
-        $online = strtotime("- 30 days");
-        $posts = Post::find(array('created >= :minutes:', 'bind' => array('minutes' => $online)));
-        if($posts !== false) {
-            $this->view->posts = $posts;
-        }
+		
 	}
  }
 ?>

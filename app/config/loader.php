@@ -22,11 +22,7 @@ $loader = new Loader();
 $loader->registerNamespaces(array(
 	'devStorm\Controllers'		=> $config->site->controllersDir,
 	'devStorm\Models'			=> $config->site->modelsDir,
-	'devStorm\Forms'			=> '../app/forms',
-	'devStorm\Library\Github'	=> '../app/library/Github',
-	'devStorm\Library\Error'	=> '../app/library/Errors',
-	'devStorm\Library\Mail'		=> '../app/library/Mail',
-    'devStorm\Library\BBCode'   => '../app/library/BBCode'
+	'devStorm'	=> '../app/',
 ));
  
 //Register now!

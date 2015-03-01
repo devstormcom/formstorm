@@ -13,3 +13,5 @@ vendor
 .htpasswd
 app/cache/metaData
 app/cache/views
+.idea
+node_modules

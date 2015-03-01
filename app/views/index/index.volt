@@ -50,7 +50,3 @@
 	<br /><br />
 	Euer devStorm Team
 </p>
-<h2 class="newsetPosts">Neuste Posts</h2>
-{% for post in posts %}
-
-{% endfor %}

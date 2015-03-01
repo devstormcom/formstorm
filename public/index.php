@@ -31,7 +31,7 @@ $config 	= new Configreader(APP_PATH.'/app/config/main.ini');
 include APP_PATH.'/app/config/loader.php';
 
 /** COMPOSER BABY!! **/
-include APP_PATH.'/vendor/autoload.php';
+//include APP_PATH.'/vendor/autoload.php';
 
 //START UP APP
 try {
