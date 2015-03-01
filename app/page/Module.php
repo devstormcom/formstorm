@@ -38,6 +38,7 @@ class Module implements ModuleDefinitionInterface
             array(
                 'Stormform\Page\Controllers' => '../app/page/controllers/',
                 'Stormfrom\Models'      => '../common/models/',
+                'Stormfrom' => '../common/lib/'
             )
         );
 
@@ -53,7 +54,7 @@ class Module implements ModuleDefinitionInterface
         //Registering a dispatcher
         $di->set('dispatcher', function() {
             $dispatcher = new Dispatcher();
-            $dispatcher->setDefaultNamespace("Stormform\Page\Controllers");
+            $dispatcher->setDefaultNamespace("Stormform");
             return $dispatcher;
         });
 
