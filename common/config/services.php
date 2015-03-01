@@ -1,16 +1,19 @@
 <?php
-/**
-+------------------------------------------------------------------------+
-| dev-storm.com                                                          |
-+------------------------------------------------------------------------+
-| Copyright (c) 2014 dev-storm.com Team                                  |
-+------------------------------------------------------------------------+
-| @author flaver <flaver@dev-storm.com>                                  |
-| @copyright flaver, dev-storm.com                                       |
-| @package devstorm.services                                             |
-| @desc all needed services are here                                     |
-+------------------------------------------------------------------------+
- */
+/*-------------------------------------------------------+
+| Stormform
+| Copyright (C) devstorm 2014-2015
++--------------------------------------------------------+
+| Filename: services.php
+| Author: Flavio Kleiber (flaver12)
++--------------------------------------------------------+
+| This program is released as free software under the
+| Affero GPL license. You can redistribute it and/or
+| modify it under the terms of this license which you
+| can read by viewing online
+| at www.gnu.org/licenses/agpl.html. Removal of this
+| copyright header is strictly prohibited without
+| written permission from the original author(s).
++--------------------------------------------------------*/
  
  use Phalcon\Mvc\Dispatcher;
  use Phalcon\Mvc\View;
@@ -20,36 +23,6 @@
  use Phalcon\Db\Adapter\Pdo\Mysql as DatabaseConnection;
  use devStorm\Library\Mail\Mail;
  use Phalcon\Mvc\Model\Metadata\Files as MetaDataAdapter;
- //Dispatcher
- $di->set('dispatcher', function() {
-	$dispatcher = new Dispatcher();
-	$dispatcher->setDefaultNamespace('devStorm\Controllers');
-	return $dispatcher;
-});
-
-//Configure volt 
-$di->set('voltService', function($view, $di){
-	$volt = new Volt($view , $di);
-	$volt->setOptions(
-		array(
-			'compiledPath' 		=> '../app/cache/views/',
-			'compiledExtension'	=> '.compiled',
-			'compileAlways'		=> true //Only for development
-		)
-	);
-	return $volt;
-});
-
-//Register the view
-$di->set('view', function() use($config) {
-	$view = new View();
-	$view->setViewsDir($config->site->viewsDir);
-	$view->registerEngines(array(
-        ".volt" => 'voltService'
-    ));
-    
-    return $view;
-});
 
 //Url
 $di->set('url', function() use($config){
@@ -60,7 +33,7 @@ $di->set('url', function() use($config){
 
 //Router
 $di->set('router', function(){
-    require '../app/config/router.php';
+    require '../common/config/router.php';
     return $router;
 });
 
@@ -115,6 +88,6 @@ $di->set('mail', function(){
     return new Mail();
 });
 $di->set('modelsMetadata', function() use($config) {
-    return new MetaDataAdapter(array('metaDataDir' => APP_PATH . '/app/cache/metaData/'));
+    return new MetaDataAdapter(array('metaDataDir' => APP_PATH . '/cache/metaData/'));
 }, true);
 ?>
