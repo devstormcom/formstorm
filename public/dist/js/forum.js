@@ -32,7 +32,45 @@ Forum = (function() {
    */
 
   Forum.prototype.sendPost = function(threadId, userId, content) {
-    return console.log("WORKS!");
+    return $.ajax('/ajax/saveComment', {
+      type: 'POST',
+      dataType: 'JSON',
+      data: {
+        'threadId': threadId,
+        'userId': userId,
+        'content': content
+      },
+      error: function(jqXHR, textStatus, errorThrown) {
+        return false;
+      },
+      success: function(data, textStatus, jqXHR) {
+        return true;
+      }
+    });
+  };
+
+
+  /*
+  * Deletes a comment
+  *
+  * @param  {integer} postId  id of the post
+  * @return {boolean}
+   */
+
+  Forum.prototype.deletePost = function(postId) {
+    return $.ajax('/ajax/deleteComment', {
+      type: 'POST',
+      dataType: 'JSON',
+      data: {
+        'postId': postId
+      },
+      error: function(jqXHR, textStatus, errorThrown) {
+        return false;
+      },
+      success: function(data, textStatus, jqXHR) {
+        return true;
+      }
+    });
   };
 
   return Forum;

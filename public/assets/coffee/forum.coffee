@@ -27,9 +27,34 @@ class Forum
   * @return {boolean}
   ###
   sendPost: (threadId, userId, content) ->
-    console.log("WORKS!")
+    $.ajax '/ajax/saveComment',
+      type: 'POST'
+      dataType: 'JSON'
+      data: {'threadId': threadId, 'userId': userId, 'content': content}
+      error: (jqXHR, textStatus, errorThrown) ->
+        #On a error just return false
+        return false
+      success: (data, textStatus, jqXHR) ->
+        #On success return true
+        return true
 
-
+  ###
+  * Deletes a comment
+  *
+  * @param  {integer} postId  id of the post
+  * @return {boolean}
+  ###
+  deletePost: (postId) ->
+    $.ajax '/ajax/deleteComment',
+      type: 'POST'
+      dataType: 'JSON'
+      data: {'postId': postId}
+      error: (jqXHR, textStatus, errorThrown) ->
+        #On a error just return false
+        return false
+      success: (data, textStatus, jqXHR) ->
+        #On success return true
+        return true
 
 
 
