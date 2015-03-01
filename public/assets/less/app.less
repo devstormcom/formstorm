@@ -3,22 +3,18 @@
 //AUTHOR: FLAVIO KLEIBER
 //////////////////////////////////////////
 
+//Themen config
+@themen: 'blue/';
+@rootfolder: 'themen/';
+
 //Import bootstrap
 @import 'bootstrap/bootstrap';
+@import "@{rootfolder}@{themen}/themen";
 
-body {
-  /*background-image: url(../img/background.png);*/
-}
-.welcome {
-  margin: 0px 0px 20px 0px ;
-}
-.newsetPosts {
-  margin-top: 60px;
-}
-.glyphicon-github:before {
-  //content: url('../img/icons/git.png');
-  background-color: transparent;
-}
-.editor_frame {
-  width: 50%;
-}
+/*
+==========================================
+PLEASE DO NOT INSERT HERE ANY TEMPLATE
+SPECIFIC STUFF, THIS IS THE MAIN LESS FILE
+ALL YOU DO HERE WILL EFFECT ALL TEMPLATES!
+==========================================
+*/

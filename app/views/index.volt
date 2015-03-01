@@ -15,7 +15,11 @@
 		{{ javascript_include("dist/js/helper.min.js") }}
 	</head>
 	<body>
+        <!--INCLUDE NAVI-->
+        {{ partial("partials/nav") }}
 		main
+
+        <div id="stormform"></div>
         <script>
             var helper = new Helper('devstorm');
             helper.createDialogLink('body', 'devstorm', '/');

@@ -8,7 +8,7 @@ Helper = (function() {
   Helper.prototype.createDialogLink = function(element, text, linkto) {
     var id;
     id = this.uniqueId();
-    return $(element).append('<a id="devstorm_' + id + '" href="' + linkto + '">' + text + '</a>');
+    return $(element).append('<a id="fromstorm_' + id + '" href="' + linkto + '">' + text + '</a>');
   };
 
   Helper.play = function(episode, name) {
