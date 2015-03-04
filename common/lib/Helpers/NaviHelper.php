@@ -17,10 +17,12 @@
 
 namespace Stormform\Helpers;
 
-class Navi {
+use Stormform\Models\Navigation;
+
+class NaviHelper {
 
     public function loadNavigation() {
-        echo 1;die;
+        
     }
 
 }

@@ -17,6 +17,8 @@
 
 namespace Stormform\Page\Controllers;
 
+use Stormform\Helpers\NaviHelper;
+
 class BaseController extends \Phalcon\Mvc\Controller
 {
 
@@ -28,6 +30,7 @@ class BaseController extends \Phalcon\Mvc\Controller
 	public function initialize()
     {
 		$this->tag->setTitle("Stormform");
+        $navi = new NaviHelper();
 	}
 }
 

@@ -38,6 +38,7 @@ class Module implements ModuleDefinitionInterface
             array(
                 'Stormform\Page\Controllers' => '../app/page/controllers/',
                 'Stormfrom\Models'      => '../common/models/',
+                'Stormform\Helpers'     => '../common/lib/Helpers/',
                 'Stormfrom' => '../common/lib/'
             )
         );

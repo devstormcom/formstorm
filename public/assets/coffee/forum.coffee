@@ -55,6 +55,23 @@ class Forum
       success: (data, textStatus, jqXHR) ->
         #On success return true
         return true
+  ###
+  * Updates a comment
+  *
+  * @param  {integer} postId  id of the post
+  * @return {boolean}
+  ###
+  updatePost: (postId) ->
+    $.ajax '/ajax/updateComment',
+      type: 'POST'
+      dataType: 'JSON'
+      data: {'postId': postId}
+      error: (jqXHR, textStatus, errorThrown) ->
+        #On a error just return false
+        return false
+      success: (data, textStatus, jqXHR) ->
+        #On success return true
+        return true
 
 
 

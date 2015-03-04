@@ -73,6 +73,30 @@ Forum = (function() {
     });
   };
 
+
+  /*
+  * Updates a comment
+  *
+  * @param  {integer} postId  id of the post
+  * @return {boolean}
+   */
+
+  Forum.prototype.updatePost = function(postId) {
+    return $.ajax('/ajax/updateComment', {
+      type: 'POST',
+      dataType: 'JSON',
+      data: {
+        'postId': postId
+      },
+      error: function(jqXHR, textStatus, errorThrown) {
+        return false;
+      },
+      success: function(data, textStatus, jqXHR) {
+        return true;
+      }
+    });
+  };
+
   return Forum;
 
 })();

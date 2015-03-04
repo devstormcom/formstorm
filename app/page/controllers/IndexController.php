@@ -16,8 +16,9 @@
 +--------------------------------------------------------*/
 
 namespace Stormform\Page\Controllers;
+
 use Stormform\Page\Controllers\BaseController;
-use Stormform\Helpers\Navi;
+use Stormfrom\Models\User;
 
  class IndexController extends BaseController
  {
@@ -30,8 +31,6 @@ use Stormform\Helpers\Navi;
   public function indexAction()
   {
       $this->tag->prependTitle("Home - ");
-      $navi = new Navi();
-      $navi->loadNavigation();
   }
 
  }
